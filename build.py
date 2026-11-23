@@ -168,11 +168,11 @@ def main():
     org = ld({"@context": "https://schema.org", "@type": "Store", "name": "The Rowan Collection", "url": SITE + "/",
               "logo": f"{SITE}/img/logo-ink.png", "image": f"{SITE}/img/og.jpg", "email": "therowancollection@gmail.com",
               "address": {"@type": "PostalAddress", "addressLocality": "Lynchburg", "addressRegion": "VA", "addressCountry": "US"},
-              "description": "Fine and antique paintings, works on paper, sculpture and period frames, found in estates."})
+              "description": "Fine and antique paintings, works on paper, sculpture and period frames, acquired at auction and from private collections."})
 
     home = fill(tpl, "meta", head_tags(
         "The Rowan Collection | Fine and Antique Art, Lynchburg, Virginia",
-        "Antique and vintage paintings, prints, works on paper and period frames, found in estates and offered from Lynchburg, Virginia. Buy direct and save 13%.",
+        "Antique and fine paintings, prints, works on paper and period frames, acquired at auction and from private collections, offered from Lynchburg, Virginia. Buy direct and save 13%.",
         SITE + "/", f"{SITE}/img/og.jpg", org))
     home = home.replace('<body data-piece="', '<body data-x="')  # safety: home never carries a piece
     home = fill(home, "pre", '<div class="wrap band"><h1>The Rowan Collection</h1><p>Fine and antique art, chosen one piece at a time.</p>'

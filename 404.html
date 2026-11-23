@@ -9,17 +9,17 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!--meta:start-->
 <title>The Rowan Collection | Fine and Antique Art, Lynchburg, Virginia</title>
-<meta name="description" content="Antique and vintage paintings, prints, works on paper and period frames, found in estates and offered from Lynchburg, Virginia. Buy direct and save 13%.">
+<meta name="description" content="Antique and fine paintings, prints, works on paper and period frames, acquired at auction and from private collections, offered from Lynchburg, Virginia. Buy direct and save 13%.">
 <meta name="robots" content="noindex">
 <link rel="canonical" href="https://therowancollection.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="The Rowan Collection">
 <meta property="og:title" content="The Rowan Collection | Fine and Antique Art, Lynchburg, Virginia">
-<meta property="og:description" content="Antique and vintage paintings, prints, works on paper and period frames, found in estates and offered from Lynchburg, Virginia. Buy direct and save 13%.">
+<meta property="og:description" content="Antique and fine paintings, prints, works on paper and period frames, acquired at auction and from private collections, offered from Lynchburg, Virginia. Buy direct and save 13%.">
 <meta property="og:image" content="https://therowancollection.com/img/og.jpg">
 <meta property="og:url" content="https://therowancollection.com/">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Store", "name": "The Rowan Collection", "url": "https://therowancollection.com/", "logo": "https://therowancollection.com/img/logo-ink.png", "image": "https://therowancollection.com/img/og.jpg", "email": "therowancollection@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Lynchburg", "addressRegion": "VA", "addressCountry": "US"}, "description": "Fine and antique paintings, works on paper, sculpture and period frames, found in estates."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Store", "name": "The Rowan Collection", "url": "https://therowancollection.com/", "logo": "https://therowancollection.com/img/logo-ink.png", "image": "https://therowancollection.com/img/og.jpg", "email": "therowancollection@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Lynchburg", "addressRegion": "VA", "addressCountry": "US"}, "description": "Fine and antique paintings, works on paper, sculpture and period frames, acquired at auction and from private collections."}</script>
 <!--meta:end-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@400;500&display=swap">
@@ -191,7 +191,7 @@ function home(){
   const shown=sorted(live.filter(i=>cat==='All'||i.category===cat));
   app.innerHTML=`<section class="crest" id="top"><img src="/img/logo-ink.png" alt="The Rowan Collection"><h1>Fine and antique art, chosen one piece at a time</h1></section>
   <div class="wrap"><section class="hero">
-    <div><p class="lead">Paintings, works on paper, sculpture and period frames, found in estates and offered from Lynchburg, Virginia.</p>
+    <div><p class="lead">Paintings, works on paper, sculpture and period frames, acquired at auction and from private collections, offered from Lynchburg, Virginia.</p>
       <a class="btn" href="#collection">View the collection</a>
       <div class="direct"><b>Buy direct and save 13%</b><p>Every piece is also listed on eBay, but you pay 13% less when you buy straight from us. Email therowancollection@gmail.com with the piece you'd like and we'll take care of the rest.</p><button class="btn" data-copy="therowancollection@gmail.com">Copy email address</button></div></div>
     ${hero?`<a class="hung" href="/art/${hero.slug}/"><div class="mount"><img src="/${esc(hero.image)}" alt="${esc(hero.title)}"></div>${label(hero)}</a>`:''}
@@ -204,7 +204,7 @@ function home(){
   </div></section>
   <section class="band" id="about"><div class="wrap about">
     <div><h2>About</h2>
-      <p>The Rowan Collection is a small art business in Lynchburg, Virginia. Each work is found at estate sales and auctions, studied, photographed and described as honestly as we can, including what we have not been able to verify.</p>
+      <p>The Rowan Collection is a small art business in Lynchburg, Virginia. Each work is acquired at auction or from a private collection, then studied, photographed and described as honestly as we can, including what we have not been able to verify.</p>
       <p>Pieces are listed in our eBay store, where you can buy outright or make an offer on most works, or bought directly from us for 13% less than the eBay price. Local pickup in the Lynchburg area can often be arranged.</p></div>
     <div class="contact"><h3>Ask about a piece</h3><p>Questions about a work, more photographs or shipping:</p><div class="addr">therowancollection@gmail.com</div><button class="btn" data-copy="therowancollection@gmail.com">Copy email address</button></div>
   </div></section>`;

@@ -201,7 +201,7 @@ function home(){
   const shown=sorted(live.filter(i=>cat==='All'||i.category===cat));
   app.innerHTML=`<section class="crest" id="top"><img src="/img/logo-ink.png" alt="The Rowan Collection"><h1>Fine and antique art, chosen one piece at a time</h1></section>
   <div class="wrap"><section class="hero">
-    <div><p class="lead">Paintings, works on paper, sculpture and period frames, found in estates and offered from Lynchburg, Virginia.</p>
+    <div><p class="lead">Paintings, works on paper, sculpture and period frames, acquired at auction and from private collections, offered from Lynchburg, Virginia.</p>
       <a class="btn" href="#collection">View the collection</a>
       <div class="direct"><b>Buy direct and save 13%</b><p>Every piece is also listed on eBay, but you pay 13% less when you buy straight from us. Email therowancollection@gmail.com with the piece you'd like and we'll take care of the rest.</p><button class="btn" data-copy="therowancollection@gmail.com">Copy email address</button></div></div>
     ${hero?`<a class="hung" href="/art/${hero.slug}/"><div class="mount"><img src="/${esc(hero.image)}" alt="${esc(hero.title)}"></div>${label(hero)}</a>`:''}
@@ -214,7 +214,7 @@ function home(){
   </div></section>
   <section class="band" id="about"><div class="wrap about">
     <div><h2>About</h2>
-      <p>The Rowan Collection is a small art business in Lynchburg, Virginia. Each work is found at estate sales and auctions, studied, photographed and described as honestly as we can, including what we have not been able to verify.</p>
+      <p>The Rowan Collection is a small art business in Lynchburg, Virginia. Each work is acquired at auction or from a private collection, then studied, photographed and described as honestly as we can, including what we have not been able to verify.</p>
       <p>Pieces are listed in our eBay store, where you can buy outright or make an offer on most works, or bought directly from us for 13% less than the eBay price. Local pickup in the Lynchburg area can often be arranged.</p></div>
     <div class="contact"><h3>Ask about a piece</h3><p>Questions about a work, more photographs or shipping:</p><div class="addr">therowancollection@gmail.com</div><button class="btn" data-copy="therowancollection@gmail.com">Copy email address</button></div>
   </div></section>`;
