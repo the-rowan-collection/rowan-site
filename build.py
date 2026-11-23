@@ -153,13 +153,13 @@ LEGAL = """<div class="wrap band"><a class="back" href="/">← Home</a>
   <p class="h">What we collect</p>
   <p>If you send an inquiry, we receive the name, email address and message you type into the form, so that we can reply. Nothing else is asked for and nothing is collected automatically beyond the standard server logs our host keeps. This site sets no advertising or tracking cookies, and we run no analytics that profile you. Your browser may store one small preference locally: the order you last chose for the collection. That never leaves your device.</p>
   <p class="h">How we use it</p>
-  <p>Inquiries are used to answer you and, if you buy a piece, to arrange payment and shipping. We do not sell, rent or share your details, and we do not add you to a mailing list. Form submissions are handled by Netlify, our website host, and email by Google; both act as processors for us. Payment is taken through PayPal or Square, who handle your card details directly — we never see or store a card number.</p>
+  <p>Inquiries are used to answer you and, if you buy a piece, to arrange payment and shipping. We do not sell, rent or share your details, and we do not add you to a mailing list. Form submissions are handled by Netlify, our website host, and email by Google; both act as processors for us. We do not take or store card details on this site.</p>
   <p class="h">How long we keep it</p>
   <p>Correspondence is kept while a conversation or a sale is live and for as long as records of a sale are needed. Ask us to delete your details at any time and we will, unless we are required to keep a record of a completed sale.</p>
   <p class="h">Your choices</p>
   <p>Write to therowancollection@gmail.com to see what we hold about you, correct it, or have it deleted.</p>
   <p class="h">Terms of sale</p>
-  <p>Prices shown are in US dollars and are the eBay price; buying direct is 13% less. A piece is held once payment clears, and shipping is quoted per piece before you pay. Shipping, returns and transit damage are covered in full on the <a href="/#shipping">Shipping &amp; returns</a> section of the home page, which forms part of these terms.</p>
+  <p>Prices shown are in US dollars and are the eBay price; buying direct is 13% less. A piece is held once payment clears, and shipping is quoted per piece before you pay. Shipping and returns are set out on the <a href="/#shipping">Shipping &amp; returns</a> section of the home page, which forms part of these terms.</p>
   <p class="h">Descriptions and attribution</p>
   <p>Every work is described as accurately as we can, including what we have not been able to verify. Where a signature, maker or date is unconfirmed, the listing says so, and those works are sold as described rather than as authenticated. Photographs are of the actual piece. If a piece is not as described, the return terms above apply.</p>
   <p class="h">Copyright</p>
