@@ -53,16 +53,19 @@ header::after,.crest::after{content:"";position:absolute;left:0;right:0;bottom:0
 nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
 nav a{text-decoration:none;font-size:15px;padding:12px 12px;color:#5d564c;border-radius:2px}
 nav a:hover,nav a[aria-current=page]{color:var(--charcoal)}
-nav a.shop{color:#8a6a2c}
+nav a.shop{color:#5d564c}
+.navtoggle{display:none;margin-left:auto;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid #cdc3ab;background:transparent;cursor:pointer;color:var(--charcoal)}
+.navtoggle span,.navtoggle span::before,.navtoggle span::after{display:block;width:20px;height:1.5px;background:currentColor;content:"";position:relative}
+.navtoggle span::before{position:absolute;top:-6px}.navtoggle span::after{position:absolute;top:6px}
 header{transition:box-shadow .25s}
 header.scrolled{box-shadow:0 6px 18px -6px rgba(0,0,0,.55)}
 header:has(+main .crest):not(.scrolled)::after{display:none}
 
 /* hero */
-.crest{position:relative;background:var(--beige);color:var(--charcoal);text-align:center;padding:clamp(10px,2.4vw,28px) max(5vw,16px) clamp(24px,3.5vw,44px);background-image:radial-gradient(900px 300px at 50% 0%,rgba(255,255,255,.45),transparent 70%)}
-.crest img{width:clamp(130px,16vw,210px);margin:0 auto 14px}
+.crest{position:relative;background:var(--beige);color:var(--charcoal);text-align:center;padding:clamp(8px,1.4vw,16px) max(5vw,16px) clamp(14px,1.8vw,22px);background-image:radial-gradient(900px 300px at 50% 0%,rgba(255,255,255,.45),transparent 70%)}
+.crest img{width:clamp(92px,10vw,140px);margin:0 auto 8px}
 .crest h1{font:italic 400 clamp(16px,2vw,23px)/1.3 var(--serif);margin:0 auto;max-width:40ch;text-wrap:balance;color:var(--charcoal)}
-.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,72px);align-items:center;padding:clamp(24px,5vw,72px) 0 clamp(40px,6vw,80px)}
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,72px);align-items:center;padding:clamp(20px,3vw,44px) 0 clamp(32px,4vw,60px)}
 .hero p.lead{font:400 clamp(21px,2vw,25px)/1.4 var(--serif);color:var(--text);max-width:30ch}
 .hero p{color:var(--muted);max-width:36ch;margin:0 0 28px;font-size:17px}
 .btn{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 22px;border:1px solid var(--gilt);color:var(--text);text-decoration:none;font-size:15px;letter-spacing:.02em;background:transparent;cursor:pointer;transition:background .25s,color .25s}
@@ -91,18 +94,24 @@ h2{font:400 clamp(30px,3.4vw,42px)/1.1 var(--serif);margin:0 0 8px;text-wrap:bal
 select{font:15px var(--sans);min-height:44px;padding:0 12px;background:var(--wall2);color:var(--text);border:1px solid color-mix(in srgb,var(--text) 20%,transparent)}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:clamp(22px,3vw,40px) clamp(18px,2.4vw,32px)}
-.card{text-decoration:none;display:grid;gap:0;align-content:start;background:var(--paper);border:1px solid var(--paper);box-shadow:0 18px 36px -18px rgba(0,0,0,.6);transition:box-shadow .3s,border-color .3s}
+.card{text-decoration:none;display:grid;grid-template-rows:auto 1fr;gap:0;background:var(--paper);border:1px solid var(--paper);box-shadow:0 18px 36px -18px rgba(0,0,0,.6);transition:box-shadow .3s,border-color .3s}
 .card .frame{aspect-ratio:4/5;background:var(--paper);display:grid;place-items:center;padding:16px}
 .card .frame img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;box-shadow:0 4px 14px rgba(0,0,0,.45);transition:transform .5s ease}
 .card:hover{box-shadow:0 22px 44px -18px rgba(0,0,0,.7)}
 .card:hover .frame img{transform:scale(1.025)}
-.card .label{box-shadow:none;border-top:2px solid var(--gilt)}
+.card .label{box-shadow:none;border-top:2px solid var(--gilt);display:flex;flex-direction:column}
+.card .label b{min-height:2.4em}
+.card .label .p{margin-top:auto;align-items:baseline}
+.card .label .p span:first-child{color:var(--ink2);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.card .label .p span:last-child{font:500 18px/1 var(--serif);color:var(--ink)}
 .empty{color:var(--muted);padding:30px 0}
 
 /* piece */
 .back{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:var(--muted);text-decoration:none;margin:24px 0 8px}
 .back:hover{color:var(--text)}
 .piece{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,4vw,64px);align-items:start;padding-bottom:clamp(40px,6vw,80px)}
+@media(min-width:861px){.viewer{position:sticky;top:96px}}
+.thumbslab{margin:18px 0 6px;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .viewer .mount{display:grid;place-items:center;min-height:min(70vh,640px)}
 .viewer .mount img{max-height:70vh;width:auto;max-width:100%}
 .thumbs{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
@@ -132,6 +141,24 @@ dt{color:var(--muted)}dd{margin:0}
 /* about */
 .about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start}
 .about p{color:#ddd5c2;max-width:58ch}
+.me{display:flex;gap:18px;align-items:center;margin:0 0 20px}
+.me img{width:108px;height:108px;object-fit:cover;flex:none;box-shadow:0 0 0 1px var(--gilt)}
+.me b{display:block;font:500 22px/1.2 var(--serif);color:var(--text)}
+.me span{color:var(--muted);font-size:14.5px}
+.terms{margin-top:30px;border-top:1px solid color-mix(in srgb,var(--gilt) 25%,transparent);padding-top:22px}
+.terms h3{font:500 22px var(--serif);margin:0 0 10px}
+.terms p{margin:0 0 10px}
+.form{display:grid;gap:11px;margin-top:4px}
+.form label{display:grid;gap:5px;font-size:13.5px;color:var(--ink2)}
+.form input,.form textarea{font:15px var(--sans);padding:10px 12px;border:1px solid #c6ba9a;background:#fffdf7;color:var(--ink);min-height:44px;width:100%}
+.form textarea{min-height:104px;resize:vertical;line-height:1.45}
+.form input:focus-visible,.form textarea:focus-visible{outline:2px solid var(--gilt2);outline-offset:1px}
+.form .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.formnote{font-size:13px;color:var(--ink2);margin:10px 0 0}
+.ok{font-size:15px;color:var(--ink);margin:0}
+.direct .form label{color:#cfc6b1}
+.direct .form input,.direct .form textarea{background:rgba(255,255,255,.06);border-color:color-mix(in srgb,var(--gilt) 45%,transparent);color:var(--text)}
+.direct .formnote,.direct .ok{color:#ddd5c2}
 .contact{background:var(--paper);color:var(--ink);padding:26px 26px 22px}
 .contact h3{font:500 26px var(--serif);margin:0 0 6px}
 .contact p{color:var(--ink2);margin:0 0 14px}
@@ -140,21 +167,26 @@ dt{color:var(--muted)}dd{margin:0}
 .contact .btn:hover{background:var(--ink);color:var(--paper)}
 footer{padding:36px 0 48px;color:var(--muted);font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between}
+footer a{color:var(--muted)}footer a:hover{color:var(--text)}
 footer img{width:38px;height:38px}
 .fade{animation:fade .6s ease both}
 @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.crest::after{animation:none}.fade{animation:none}.card .frame img{transition:none}}
 @media(max-width:860px){.hero,.piece,.about{grid-template-columns:1fr}.hung .label{position:static;width:auto;margin-top:-6px}}
-@media(max-width:600px){nav a{padding:12px 8px;font-size:14px}.brand span{display:none}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 14px}.card .frame{padding:10px}.label b{font-size:17px}.viewer .mount{min-height:0}}
+@media(max-width:600px){.navtoggle{display:inline-flex}
+nav{position:absolute;top:100%;left:0;right:0;margin:0;flex-direction:column;gap:0;background:var(--beige);padding:4px 0 10px;display:none;box-shadow:0 14px 24px -12px rgba(0,0,0,.6)}
+nav.open{display:flex}nav a{padding:14px max(5vw,16px);font-size:16px}.brand span{display:none}.me img{width:84px;height:84px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 14px}.card .frame{padding:10px}.label b{font-size:17px}.viewer .mount{min-height:0}}
 @media(max-width:380px){.grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body data-piece="erte-morning-day-evening-night-serigraph-pair">
 <header><div class="wrap bar">
   <a class="brand" href="/#top" aria-label="The Rowan Collection, home"><img src="/img/logo-ink.png" alt=""><span>The Rowan Collection</span></a>
-  <nav aria-label="Main">
+  <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span></button>
+  <nav aria-label="Main" id="nav">
     <a href="/#collection" data-nav="collection">Collection</a>
     <a href="/#about" data-nav="about">About</a>
+    <a href="/#shipping" data-nav="shipping">Shipping &amp; returns</a>
     <a class="shop" href="https://www.ebay.com/usr/therowancollection" target="_blank" rel="noopener">eBay Store ↗</a>
   </nav>
 </div></header>
@@ -167,17 +199,22 @@ footer img{width:38px;height:38px}
       <p class="maker">Erté (Romain de Tirtoff, 1892–1990)</p><h1>Morning, Day and Evening, Night</h1>
       <dl><dt>Date</dt><dd>1982–1985</dd><dt>Medium</dt><dd>Serigraphs with embossing and foil stamping, a matched pair, each hand-signed, edition 182/300</dd><dt>Size</dt><dd>Image about 38 × 28½ in; framed about 4 ft tall each</dd><dt>Category</dt><dd>Works on paper</dd></dl>
       <p class="price">$4,300</p>
-      <div class="direct"><b>Buy direct and save 13%: <span class="dp">$3,741</span></b><p>Skip eBay and buy this piece straight from us for 13% less. Email therowancollection@gmail.com and mention “Morning, Day and Evening, Night”.</p></div>
+      <div class="direct"><b>Buy direct and save 13%: <span class="dp">$3,741</span></b><p>Skip eBay and buy this piece straight from us for 13% less. Send a note and I will reply with an invoice and shipping.</p></div>
       <div class="actions"><a class="btn" href="https://www.ebay.com/itm/317665492086" rel="noopener">View on eBay ↗</a></div>
-      <div class="story"><h3>From the listing</h3><p class="">Very large! 4ft tall each framed.</p><p class="h">Overview</p><p class="">Up for acquisition is the quintessential two-piece suite from the &quot;Father of Art Deco,&quot; Romain de Tirtoff (Erté), usually retailing at $20,000 for the set. This set features his world-renowned masterpieces &quot;Morning, Day&quot; and &quot;Evening, Night,&quot; produced in 1982-1985.</p><p class="">Both pieces are hand-signed by the artist and share the matching limited edition number 182/300. This primary edition is highly coveted for its vibrant colors, intricate embossing, and luxurious foil stamping on heavy black wove paper.</p><p class="h">Item Specifics</p><p class="">• Artist: Erté (Romain de Tirtoff)</p><p class="">• Title: Morning, Day / Evening, Night (2-Piece Suite)</p><p class="">• Medium: Mixed Media Serigraph with Embossing and Foil Stamping</p><p class="">• Edition Number: 182/300 (Matching Pair)</p><p class="">• Signature: Hand-signed by Erté in pencil (Lower Right)</p><p class="">• Year of Production: 1982–1985</p><p class="">• Image Dimensions: Approx. 38” x 28.5”</p><p class="">• Paper: Premium Heavyweight Black Wove Paper</p><p class="">These pieces have been kept in a climate-controlled, smoke-free environment and are in Excellent condition. The colors remain remarkably vibrant with no signs of fading or foxing. The foil stamping is crisp and intact.</p><p class="h">Why This Suite?</p><p class="">The &quot;Morning/Evening&quot; suite is widely considered one of Erté’s most iconic visual narratives. While individual prints from later, larger editions appear frequently, a matching numbered set from the limited 300-run is a blue-chip addition to any serious Art Deco collection.</p><p class="h">Shipping &amp; Handling</p><p class="">Due to the value and size of these works, shipping will be handled with extreme care:</p><p class="">• Professional Packing: Artwork will be packed using acid-free materials and heavy-duty art shippers.</p><p class="">• Insurance: Full-value insurance is included in the shipping cost.</p><p class="">• Signature Required: Delivery will require an adult signature upon arrival.</p><p class="h">Authenticity Guaranteed</p><p class="">I stand behind the authenticity of this suite. The signatures and edition numbers are clear and consistent with Erté’s verified works from this period.</p><p class="">** the actual prints are in mint condition. The frames have some scuffs, but not too bad. Will send pictures if desired.</p><p class="">Pick up only unless offers to pay for professional art shipping.</p></div>
+      <div class="story"><h3>About this work</h3><p class="">Very large! 4ft tall each framed.</p><p class="h">Overview</p><p class="">Up for acquisition is the quintessential two-piece suite from the &quot;Father of Art Deco,&quot; Romain de Tirtoff (Erté), usually retailing at $20,000 for the set. This set features his world-renowned masterpieces &quot;Morning, Day&quot; and &quot;Evening, Night,&quot; produced in 1982-1985.</p><p class="">Both pieces are hand-signed by the artist and share the matching limited edition number 182/300. This primary edition is highly coveted for its vibrant colors, intricate embossing, and luxurious foil stamping on heavy black wove paper.</p><p class="h">Item Specifics</p><p class="">• Artist: Erté (Romain de Tirtoff)</p><p class="">• Title: Morning, Day / Evening, Night (2-Piece Suite)</p><p class="">• Medium: Mixed Media Serigraph with Embossing and Foil Stamping</p><p class="">• Edition Number: 182/300 (Matching Pair)</p><p class="">• Signature: Hand-signed by Erté in pencil (Lower Right)</p><p class="">• Year of Production: 1982–1985</p><p class="">• Image Dimensions: Approx. 38” x 28.5”</p><p class="">• Paper: Premium Heavyweight Black Wove Paper</p><p class="">These pieces have been kept in a climate-controlled, smoke-free environment and are in Excellent condition. The colors remain remarkably vibrant with no signs of fading or foxing. The foil stamping is crisp and intact.</p><p class="h">Why This Suite?</p><p class="">The &quot;Morning/Evening&quot; suite is widely considered one of Erté’s most iconic visual narratives. While individual prints from later, larger editions appear frequently, a matching numbered set from the limited 300-run is a blue-chip addition to any serious Art Deco collection.</p><p class="h">Shipping &amp; Handling</p><p class="">Due to the value and size of these works, shipping will be handled with extreme care:</p><p class="">• Professional Packing: Artwork will be packed using acid-free materials and heavy-duty art shippers.</p><p class="">• Insurance: Full-value insurance is included in the shipping cost.</p><p class="">• Signature Required: Delivery will require an adult signature upon arrival.</p><p class="h">Authenticity Guaranteed</p><p class="">I stand behind the authenticity of this suite. The signatures and edition numbers are clear and consistent with Erté’s verified works from this period.</p><p class="">** the actual prints are in mint condition. The frames have some scuffs, but not too bad. Will send pictures if desired.</p><p class="">Pick up only unless offers to pay for professional art shipping.</p></div>
     </div>
   </article></div>
 <!--pre:end--></main>
+
+<form name="inquiry" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="text" name="name"><input type="email" name="email"><input type="text" name="piece"><textarea name="message"></textarea>
+</form>
 
 <footer><div class="wrap">
   <img src="/img/logo-light.png" alt="The Rowan Collection">
   <span>The Rowan Collection · Lynchburg, Virginia</span>
   <span>therowancollection@gmail.com</span>
+  <span><a href="/legal/">Privacy &amp; terms</a></span>
   <span id="upd"></span>
 </div></footer>
 
@@ -191,6 +228,17 @@ let DATA=[],cat='All',sort='featured',pic=0;
 try{sort=localStorage.getItem('rc-sort')||'featured'}catch(e){}
 
 const label=(it,withPrice=true)=>`<div class="label"><b>${esc(it.title)}</b><span class="m">${esc([it.maker,it.date].filter(Boolean).join(', '))}</span>${withPrice?`<div class="p"><span>${esc(it.category)}</span><span>${usd(it.price)}</span></div>`:''}</div>`;
+const EMAIL='therowancollection@gmail.com';
+const formHTML=(piece='',dark=false)=>`<form class="form" name="inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="inquiry"><p class="hp"><label>Leave this empty <input name="bot-field"></label></p>
+  <label>Your name<input type="text" name="name" required autocomplete="name"></label>
+  <label>Your email<input type="email" name="email" required autocomplete="email"></label>
+  <label>Piece<input type="text" name="piece" value="${esc(piece)}" placeholder="Which work are you asking about?"></label>
+  <label>Message<textarea name="message" rows="4" required placeholder="Ask anything \u2014 condition, more photographs, shipping, or to buy direct."></textarea></label>
+  <button class="btn${dark?' solid':''}" type="submit">Send inquiry</button>
+  <p class="formnote">Or email ${EMAIL} directly.</p>
+</form>`;
+
 const card=it=>`<a class="card fade" href="/art/${it.slug}/"><div class="frame"><img src="/${esc(it.image)}" alt="${esc(it.title)}" loading="lazy"></div>${label(it)}</a>`;
 
 function sorted(list){const l=[...list];if(sort==='low')l.sort((a,b)=>a.price-b.price);else if(sort==='high')l.sort((a,b)=>b.price-a.price);else l.sort((a,b)=>(!!b.featured-!!a.featured)||(a.order??99)-(b.order??99)||b.price-a.price);return l}
@@ -203,7 +251,7 @@ function home(){
   <div class="wrap"><section class="hero">
     <div><p class="lead">Paintings, works on paper, sculpture and period frames, acquired at auction and from private collections, offered from Lynchburg, Virginia.</p>
       <a class="btn" href="#collection">View the collection</a>
-      <div class="direct"><b>Buy direct and save 13%</b><p>Every piece is also listed on eBay, but you pay 13% less when you buy straight from us. Email therowancollection@gmail.com with the piece you'd like and we'll take care of the rest.</p><button class="btn" data-copy="therowancollection@gmail.com">Copy email address</button></div></div>
+      <div class="direct"><b>Buy direct and save 13%</b><p>Every piece is also listed on eBay, but you pay 13% less when you buy straight from us. Tell us which work you would like and we will take care of the rest.</p><a class="btn" href="#about">Ask about a piece</a></div></div>
     ${hero?`<a class="hung" href="/art/${hero.slug}/"><div class="mount"><img src="/${esc(hero.image)}" alt="${esc(hero.title)}"></div>${label(hero)}</a>`:''}
   </section></div>
   <section class="band alt" id="collection"><div class="wrap">
@@ -214,30 +262,40 @@ function home(){
   </div></section>
   <section class="band" id="about"><div class="wrap about">
     <div><h2>About</h2>
-      <p>The Rowan Collection is a small art business in Lynchburg, Virginia. Each work is acquired at auction or from a private collection, then studied, photographed and described as honestly as we can, including what we have not been able to verify.</p>
-      <p>Pieces are listed in our eBay store, where you can buy outright or make an offer on most works, or bought directly from us for 13% less than the eBay price. Local pickup in the Lynchburg area can often be arranged.</p></div>
-    <div class="contact"><h3>Ask about a piece</h3><p>Questions about a work, more photographs or shipping:</p><div class="addr">therowancollection@gmail.com</div><button class="btn" data-copy="therowancollection@gmail.com">Copy email address</button></div>
+      <div class="me"><img src="/img/timothy.jpg" alt="Timothy Riordan"><div><b>Timothy Riordan</b><span>Founder, The Rowan Collection &middot; Lynchburg, Virginia</span></div></div>
+      <p>I will always tell you what I have not been able to verify. A signature I cannot confirm is described as a signature I cannot confirm, and an attribution stays an attribution until there is evidence behind it. Every listing says plainly what is known, what is likely and what is still open.</p>
+      <p>That honesty is the part I enjoy most. Each piece arrives as a small mystery, and I happily spend hours on it &mdash; tracing a monogram, chasing a printer's mark, reading auction records until a name finally fits. By the time a work reaches this page I have usually learned more about it than I expected to, and the description is everything I found.</p>
+      <p>Works are acquired at auction and from private collections, photographed, and offered here and in our eBay store. Buy direct and the price is 13% less than eBay. Local pickup around Lynchburg can often be arranged.</p>
+      <div class="terms" id="shipping"><h3>Shipping &amp; returns</h3>
+        <p><b>Shipping.</b> Works on paper and smaller pieces ship within 3 business days, packed flat or rolled in rigid board and fully insured for the purchase price. Paintings, framed works and sculpture are packed to order, which takes up to 7 business days; large or fragile pieces may go by freight. Shipping is quoted per piece before you pay, and tracking is sent as soon as it ships. We ship across the United States; ask about international.</p>
+        <p><b>Returns.</b> If a piece arrives and is not what the listing described, return it within 14 days of delivery for a full refund including original shipping, provided it comes back in the same condition and packing. Change of mind is fine too, within the same 14 days, with return shipping paid by you. Tell us before sending anything back so we can confirm the address.</p>
+        <p><b>Damage in transit.</b> Everything is insured. Photograph the box and the piece before unpacking further, tell us within 48 hours of delivery, and we will handle the claim and make it right.</p>
+        <p><b>Payment.</b> Direct purchases are invoiced through PayPal or Square, so your card is handled by them and never by us. Payment clears before a piece ships. eBay purchases run through eBay as usual.</p>
+      </div></div>
+    <div class="contact"><h3>Ask about a piece</h3><p>Condition, more photographs, shipping, or to buy direct &mdash; this reaches me straight away.</p>${formHTML()}<div class="addr">${EMAIL}</div></div>
   </div></section>`;
   const s=document.getElementById('sortSel');s.value=sort;s.onchange=()=>{sort=s.value;try{localStorage.setItem('rc-sort',sort)}catch(e){}home();document.getElementById('collection').scrollIntoView()};
   app.querySelectorAll('[data-cat]').forEach(b=>b.onclick=()=>{cat=b.dataset.cat;const y=scrollY;home();scrollTo(0,y)});
 }
 
 function piece(it){
-  const photos=[{local:'/'+it.image,remote:it.photos[0]},...it.photos.slice(1).map(u=>({remote:u}))];
+  const shots=(it.photos||[]).filter(u=>!/\.png(\?|$)/i.test(u));
+  const photos=[{local:'/'+it.image,remote:shots[0]},...shots.slice(1).map(u=>({remote:u}))];
   pic=0;
   const desc=(it.description||[]).map(p=>{const h=/:$/.test(p)||/^(Details|Item Details|Condition|Provenance|Design|Dimensions|Shipping|Overview|Item Specifics|Why This|Signature|Artistic Details|Authenticity Guaranteed)/.test(p)&&p.length<45;return `<p class="${h?'h':''}">${esc(p.replace(/^\*\s+/,'— '))}</p>`}).join('');
   app.innerHTML=`<div class="wrap"><a class="back" href="/#collection">← The collection</a>
   <article class="piece fade">
     <div class="viewer"><div class="mount"><img id="big" src="/${esc(it.image)}" alt="${esc(it.title)}"></div>
+      <p class="thumbslab">Views &amp; condition</p>
       <div class="thumbs" id="thumbs">${photos.map((p,i)=>`<button data-i="${i}" aria-current="${i===0}" aria-label="Photo ${i+1}"><img src="${esc(p.local||p.remote)}" alt="" loading="lazy"></button>`).join('')}</div>
       <p class="more" id="more" hidden>More photographs of this piece are on <a href="${esc(it.ebayUrl)}" target="_blank" rel="noopener">its eBay listing ↗</a>.</p></div>
     <div class="info">
       <p class="maker">${esc(it.maker)}</p><h1>${esc(it.title)}</h1>
       <dl>${[['Date',it.date],['Medium',it.medium],['Size',it.size],['Category',it.category]].filter(r=>r[1]).map(r=>`<dt>${r[0]}</dt><dd>${esc(r[1])}</dd>`).join('')}</dl>
       <p class="price">${usd(it.price)}</p><p class="offer">${it.offer?'eBay price, offers considered.':'eBay price.'}</p>
-      <div class="direct"><b>Buy direct and save 13%: <span class="dp">${usd(Math.round(it.price*0.87))}</span></b><p>Skip eBay and buy this piece straight from us for 13% less. Email therowancollection@gmail.com and mention “${esc(it.title)}”.</p><button class="btn solid" data-copy="therowancollection@gmail.com">Copy email address</button></div>
+      <div class="direct"><b>Buy direct and save 13%: <span class="dp">${usd(Math.round(it.price*0.87))}</span></b><p>Skip eBay and buy this piece straight from us for 13% less. Send a note and I will reply with an invoice and shipping.</p>${formHTML(it.title,true)}</div>
       <div class="actions"><a class="btn" href="${esc(it.ebayUrl)}" target="_blank" rel="noopener">${it.offer?'Buy or make an offer on eBay':'Buy on eBay'} ↗</a></div>
-      <div class="story"><h3>From the listing</h3>${desc}<p class="note">eBay item ${esc(it.id)}</p></div>
+      <div class="story"><h3>About this work</h3>${desc}<p class="note">eBay item ${esc(it.id)}</p></div>
     </div>
   </article></div>`;
   const big=document.getElementById('big'),th=document.getElementById('thumbs');
@@ -246,12 +304,14 @@ function piece(it){
   th.querySelectorAll('img').forEach((im,i)=>{im.onerror=()=>{const b=im.parentElement;if(i>0){b.remove();document.getElementById('more').hidden=false}}});
   th.onclick=e=>{const b=e.target.closest('button');if(!b)return;pic=+b.dataset.i;const p=photos[pic];big.src=pic===0&&!hi.naturalWidth?p.local:p.remote;th.querySelectorAll('button').forEach(x=>x.setAttribute('aria-current',x===b))};
   big.onerror=()=>{if(photos[pic].local)big.src=photos[pic].local};
-  if(th.children.length<2)document.getElementById('more').hidden=it.photos.length<2;
+  if(th.children.length<2)document.getElementById('more').hidden=shots.length<2;
   
 }
 
 const PIECE=document.body.dataset.piece||'';
+const STATIC=document.body.dataset.static==='1';
 function route(){
+  if(STATIC)return;
   const h=location.hash.slice(1);
   if(h.startsWith('piece-')){const it=DATA.find(i=>i.id===h.slice(6));if(it&&it.slug){location.replace('/art/'+it.slug+'/');return}}
   if(PIECE){const it=DATA.find(i=>i.slug===PIECE);if(it){piece(it);return}location.replace('/');return}
@@ -261,11 +321,30 @@ function route(){
   if(t){t.scrollIntoView();const n=document.querySelector(`[data-nav="${h}"]`);if(n)n.setAttribute('aria-current','page')}else scrollTo(0,0);
 }
 
+const nt=document.getElementById('navtoggle'),navEl=document.getElementById('nav');
+if(nt)nt.onclick=()=>{const o=navEl.classList.toggle('open');nt.setAttribute('aria-expanded',o)};
+if(navEl)navEl.addEventListener('click',e=>{if(e.target.closest('a')){navEl.classList.remove('open');if(nt)nt.setAttribute('aria-expanded','false')}});
+
+document.addEventListener('submit',async e=>{
+  const f=e.target.closest('form.form');if(!f)return;e.preventDefault();
+  const btn=f.querySelector('button[type=submit]');if(btn){btn.disabled=true;btn.textContent='Sending\u2026'}
+  const d=new FormData(f);d.set('form-name','inquiry');
+  try{
+    const r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(d).toString()});
+    if(!r.ok)throw 0;
+    f.innerHTML=`<p class="ok">Thank you \u2014 your message is on its way. I reply from ${EMAIL}, usually within a day.</p>`;
+  }catch(x){
+    if(btn){btn.disabled=false;btn.textContent='Send inquiry'}
+    const nmsg=f.querySelector('.formnote');
+    if(nmsg)nmsg.textContent='That did not send. Please email '+EMAIL+' directly and I will pick it up there.';
+  }
+});
+
 document.addEventListener('click',async e=>{const b=e.target.closest('[data-copy]');if(!b)return;try{await navigator.clipboard.writeText(b.dataset.copy);b.textContent='Copied'}catch(x){b.textContent=b.dataset.copy}});
 addEventListener('hashchange',route);
 const hdr=document.querySelector('header');const onS=()=>hdr.classList.toggle('scrolled',scrollY>8);addEventListener('scroll',onS,{passive:true});onS();
 
-fetch('/catalog.json').then(r=>r.json()).then(d=>{DATA=d.items||[];if(d.updated)document.getElementById('upd').textContent='Updated '+new Date(d.updated+'T12:00:00').toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});route()}).catch(()=>{app.innerHTML='<div class="wrap band"><p>The collection could not be loaded. Please refresh the page.</p></div>'});
+fetch('/catalog.json').then(r=>r.json()).then(d=>{DATA=d.items||[];if(d.updated)document.getElementById('upd').textContent='Inventory updated '+new Date(d.updated+'T12:00:00').toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});route()}).catch(()=>{app.innerHTML='<div class="wrap band"><p>The collection could not be loaded. Please refresh the page.</p></div>'});
 }
 </script>
 </body>

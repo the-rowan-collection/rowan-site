@@ -108,9 +108,9 @@ def piece_body(it):
       <p class="maker">{esc(it.get("maker"))}</p><h1>{esc(it["title"])}</h1>
       <dl>{rows}</dl>
       <p class="price">{usd(it["price"])}</p>
-      <div class="direct"><b>Buy direct and save 13%: <span class="dp">{usd(round(it["price"] * 0.87))}</span></b><p>Skip eBay and buy this piece straight from us for 13% less. Email therowancollection@gmail.com and mention “{esc(it["title"])}”.</p></div>
+      <div class="direct"><b>Buy direct and save 13%: <span class="dp">{usd(round(it["price"] * 0.87))}</span></b><p>Skip eBay and buy this piece straight from us for 13% less. Send a note and I will reply with an invoice and shipping.</p></div>
       <div class="actions"><a class="btn" href="{esc(it["ebayUrl"])}" rel="noopener">View on eBay ↗</a></div>
-      <div class="story"><h3>From the listing</h3>{desc}</div>
+      <div class="story"><h3>About this work</h3>{desc}</div>
     </div>
   </article></div>'''
 
@@ -143,6 +143,30 @@ def product_ld(it, url):
                    "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/UsedCondition",
                    "url": url, "seller": {"@type": "Organization", "name": "The Rowan Collection"}},
     })
+
+
+LEGAL = """<div class="wrap band"><a class="back" href="/">← Home</a>
+  <h2>Privacy &amp; terms</h2>
+  <div class="story" style="border:0;padding-top:8px;max-width:72ch">
+  <p class="h">Who we are</p>
+  <p>The Rowan Collection is a sole proprietorship run by Timothy Riordan in Lynchburg, Virginia. Reach us at therowancollection@gmail.com.</p>
+  <p class="h">What we collect</p>
+  <p>If you send an inquiry, we receive the name, email address and message you type into the form, so that we can reply. Nothing else is asked for and nothing is collected automatically beyond the standard server logs our host keeps. This site sets no advertising or tracking cookies, and we run no analytics that profile you. Your browser may store one small preference locally: the order you last chose for the collection. That never leaves your device.</p>
+  <p class="h">How we use it</p>
+  <p>Inquiries are used to answer you and, if you buy a piece, to arrange payment and shipping. We do not sell, rent or share your details, and we do not add you to a mailing list. Form submissions are handled by Netlify, our website host, and email by Google; both act as processors for us. Payment is taken through PayPal or Square, who handle your card details directly — we never see or store a card number.</p>
+  <p class="h">How long we keep it</p>
+  <p>Correspondence is kept while a conversation or a sale is live and for as long as records of a sale are needed. Ask us to delete your details at any time and we will, unless we are required to keep a record of a completed sale.</p>
+  <p class="h">Your choices</p>
+  <p>Write to therowancollection@gmail.com to see what we hold about you, correct it, or have it deleted.</p>
+  <p class="h">Terms of sale</p>
+  <p>Prices shown are in US dollars and are the eBay price; buying direct is 13% less. A piece is held once payment clears, and shipping is quoted per piece before you pay. Shipping, returns and transit damage are covered in full on the <a href="/#shipping">Shipping &amp; returns</a> section of the home page, which forms part of these terms.</p>
+  <p class="h">Descriptions and attribution</p>
+  <p>Every work is described as accurately as we can, including what we have not been able to verify. Where a signature, maker or date is unconfirmed, the listing says so, and those works are sold as described rather than as authenticated. Photographs are of the actual piece. If a piece is not as described, the return terms above apply.</p>
+  <p class="h">Copyright</p>
+  <p>Photographs and descriptions on this site are ours; please do not reuse them without asking.</p>
+  <p class="h">Governing law</p>
+  <p>These terms are governed by the laws of the Commonwealth of Virginia.</p>
+  </div></div>"""
 
 
 def fill(tpl, region, content):
@@ -191,8 +215,17 @@ def main():
         d.mkdir(parents=True)
         (d / "index.html").write_text(page)
 
+    legal = fill(tpl, "meta", head_tags(
+        "Privacy & Terms | The Rowan Collection",
+        "Privacy policy, terms of sale, description and attribution practice for The Rowan Collection, Lynchburg, Virginia.",
+        SITE + "/legal/", f"{SITE}/img/og.jpg"))
+    legal = fill(legal, "pre", LEGAL)
+    legal = re.sub(r"<body[^>]*>", '<body data-static="1">', legal, count=1)
+    (ROOT / "legal").mkdir(exist_ok=True)
+    (ROOT / "legal" / "index.html").write_text(legal)
+
     today = cat.get("updated") or date.today().isoformat()
-    urls = [(SITE + "/", "1.0")] + [(f"{SITE}/art/{i['slug']}/", "0.8") for i in live]
+    urls = [(SITE + "/", "1.0")] + [(f"{SITE}/art/{i['slug']}/", "0.8") for i in live] + [(SITE + "/legal/", "0.3")]
     (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{u}</loc><lastmod>{today}</lastmod><priority>{p}</priority></url>\n" for u, p in urls) + "</urlset>\n")
     (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
