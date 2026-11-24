@@ -102,7 +102,9 @@ select{font:15px var(--sans);min-height:44px;padding:0 12px;background:var(--wal
 .card:hover .frame img{transform:scale(1.025)}
 .card .label{box-shadow:none;border-top:2px solid var(--gilt);display:flex;flex-direction:column}
 .card .label b{min-height:2.4em}
-.card .label .p{margin-top:auto;align-items:baseline}
+.card .label .p{margin-top:auto;align-items:baseline;gap:10px}
+.card .label .p span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis}
+.card .label .p span:last-child{flex:none}
 .card .label .p span:first-child{color:var(--ink2);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
 .card .label .p span:last-child{font:500 18px/1 var(--serif);color:var(--ink)}
 .empty{color:var(--muted);padding:30px 0}
@@ -175,6 +177,8 @@ footer img{width:38px;height:38px}
 @media (prefers-reduced-motion:reduce){.crest::after{animation:none}.fade{animation:none}.card .frame img{transition:none}}
 @media(max-width:860px){.hero,.piece,.about{grid-template-columns:1fr}.hung .label{position:static;width:auto;margin-top:-6px}}
 @media(max-width:600px){.navtoggle{display:inline-flex}
+.card .label .p{flex-direction:column;align-items:flex-start;gap:3px;white-space:normal}
+.card .label .p span:first-child{overflow:visible;font-size:11.5px}
 nav{position:absolute;top:100%;left:0;right:0;margin:0;flex-direction:column;gap:0;background:var(--beige);padding:4px 0 10px;display:none;box-shadow:0 14px 24px -12px rgba(0,0,0,.6)}
 nav.open{display:flex}nav a{padding:14px max(5vw,16px);font-size:16px}.brand span{display:none}.me img{width:84px;height:84px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 14px}.card .frame{padding:10px}.label b{font-size:17px}.viewer .mount{min-height:0}}
 @media(max-width:380px){.grid{grid-template-columns:1fr}}
