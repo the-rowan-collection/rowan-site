@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21",
+ "updated": "2026-11-24",
  "items": [
   {
    "id": "860162549493",
@@ -12,6 +12,11 @@
    "price": 2300,
    "offer": true,
    "featured": true,
+   "hero": false,
+   "order": 1,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/860162549493",
+   "image": "img/860162549493.jpg",
    "photos": [
     "https://i.ebayimg.com/images/g/8WwAAeSw-G5rAJ2H/s-l1600.jpg",
     "https://i.ebayimg.com/images/g/cIwAAeSwiclrAJG3/s-l1600.jpg",
@@ -41,11 +46,7 @@
     "The painting and frame present beautifully overall. Please examine all photographs carefully for the condition and character of this antique artwork and frame. Frame has marks and scratches as to be expected from an old frame.",
     "A wonderful piece for a collector of 19th-century American or European winter landscapes, antique paintings, folk-inspired Americana, or historic decorative art."
    ],
-   "ebayUrl": "https://www.ebay.com/itm/860162549493",
-   "image": "img/860162549493.jpg",
-   "visible": true,
-   "slug": "winter-landscape-with-sleigh-antique-oil-painting",
-   "seoTitle": "Winter Landscape with Sleigh, 19th-Century American Oil Painting"
+   "slug": "winter-landscape-with-sleigh-antique-oil-painting"
   },
   {
    "id": "860092231963",
@@ -58,6 +59,11 @@
    "price": 5485,
    "offer": true,
    "featured": true,
+   "hero": true,
+   "order": 2,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/860092231963",
+   "image": "img/860092231963.jpg",
    "photos": [
     "https://i.ebayimg.com/images/g/xHMAAeSw4h9q6gby/s-l1600.jpg",
     "https://i.ebayimg.com/images/g/Zk0AAeSw0X9q4gDk/s-l1600.jpg",
@@ -79,11 +85,7 @@
     "* Framing: Offered with the frame shown (minor gilt loss on frame)",
     "Please examine all photographs carefully for surface details and the condition of both painting and frame. Additional photographs are available upon request."
    ],
-   "ebayUrl": "https://www.ebay.com/itm/860092231963",
-   "image": "img/860092231963.jpg",
-   "visible": true,
-   "slug": "alpine-landscape-carl-hasch-oil-painting",
-   "seoTitle": "Alpine Landscape with Glacier by Carl Hasch, Oil Painting"
+   "slug": "alpine-landscape-carl-hasch-oil-painting"
   },
   {
    "id": "318765084013",
@@ -96,6 +98,10 @@
    "price": 6250,
    "offer": true,
    "featured": true,
+   "order": 3,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/318765084013",
+   "image": "img/318765084013.jpg",
    "photos": [
     "https://i.ebayimg.com/images/g/xyIAAeSwpLBqiLJV/s-l1600.jpg",
     "https://i.ebayimg.com/images/g/MSUAAeSwYtNqiLJV/s-l1600.jpg",
@@ -116,11 +122,7 @@
     "Overall good antique condition given its 170+ year age. The canvas shows light craquelure and surface patination typical of mid-19th-century paintings. The gilt frame retains vibrant luster with light cosmetic distressing, rubbing, and minor age wear along the borders, adding authentic character. Please review high-resolution photos carefully for complete visual details.",
     "Packed with extreme care and fully insured for shipping."
    ],
-   "ebayUrl": "https://www.ebay.com/itm/318765084013",
-   "image": "img/318765084013.jpg",
-   "visible": true,
-   "slug": "couple-resting-at-the-harvest-european-oil-painting",
-   "seoTitle": "Couple Resting at the Harvest, European School Oil Painting"
+   "slug": "couple-resting-at-the-harvest-european-oil-painting"
   },
   {
    "id": "318765101159",
@@ -130,9 +132,13 @@
    "medium": "Charcoal on paper",
    "size": "28 × 24 in",
    "category": "Works on paper",
-   "price": 5200,
+   "price": 5000,
    "offer": true,
    "featured": true,
+   "order": 4,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/318765101159",
+   "image": "img/318765101159.jpg",
    "photos": [
     "https://i.ebayimg.com/images/g/BikAAeSw4vlqiLXX/s-l1600.jpg",
     "https://i.ebayimg.com/images/g/6usAAeSwjh5qiLWr/s-l1600.jpg"
@@ -152,11 +158,7 @@
     "Overall good vintage/antique condition for an early 1900s work on paper. Shows natural age toning, gentle undulation (waving) to the paper, and light foxing/spotting consistent with turn-of-the-century works. Edges are intact with no major tears or visible structural damage to the subject area. Please inspect high-resolution photographs for full condition details.",
     "Shipped flat with rigid backing, moisture protection, and full insurance."
    ],
-   "ebayUrl": "https://www.ebay.com/itm/318765101159",
-   "image": "img/318765101159.jpg",
-   "visible": true,
-   "slug": "portrait-bearded-man-fur-cap-charcoal-drawing",
-   "seoTitle": "Portrait of a Bearded Man in a Fur Cap, Signed Charcoal Drawing"
+   "slug": "portrait-bearded-man-fur-cap-charcoal-drawing"
   },
   {
    "id": "317665492086",
@@ -169,6 +171,10 @@
    "price": 4300,
    "offer": true,
    "featured": false,
+   "order": 5,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/317665492086",
+   "image": "img/317665492086.jpg",
    "photos": [
     "https://i.ebayimg.com/images/g/2CgAAeSwMqJpSDu0/s-l1600.jpg",
     "https://i.ebayimg.com/images/g/JHUAAeSw7ltpSDyO/s-l1600.jpg",
@@ -213,11 +219,7 @@
     "** the actual prints are in mint condition. The frames have some scuffs, but not too bad. Will send pictures if desired.",
     "Pick up only unless offers to pay for professional art shipping."
    ],
-   "ebayUrl": "https://www.ebay.com/itm/317665492086",
-   "image": "img/317665492086.jpg",
-   "visible": true,
-   "slug": "erte-morning-day-evening-night-serigraph-pair",
-   "seoTitle": "Erté, Morning, Day and Evening, Night, Signed Serigraph Pair"
+   "slug": "erte-morning-day-evening-night-serigraph-pair"
   },
   {
    "id": "317669084163",
@@ -230,6 +232,10 @@
    "price": 975,
    "offer": true,
    "featured": false,
+   "order": 6,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/317669084163",
+   "image": "img/317669084163.jpg",
    "photos": [
     "https://i.ebayimg.com/images/g/A0UAAeSwfKVqwmMN/s-l1600.jpg",
     "https://i.ebayimg.com/images/g/j0UAAeSwPLdpaAZo/s-l1600.jpg",
@@ -246,11 +252,7 @@
     "The product is a hand-painted antique wooden statue of the Virgin Mary, specifically depicting her in the role of a praying saint. This statue, representing the Immaculate Conception, is a religious collectible that would be cherished by all for its spiritual symbolism and craftsmanship. Made from wood, this unique figure embodies the beauty and tradition of religious art, making it a special addition to any collection or a meaningful piece for personal devotion.",
     "* The back of her head seems to be repaired, see pictures."
    ],
-   "ebayUrl": "https://www.ebay.com/itm/317669084163",
-   "image": "img/317669084163.jpg",
-   "visible": true,
-   "slug": "santo-virgin-in-prayer-spanish-colonial-carving",
-   "seoTitle": "Santo of the Virgin in Prayer, Spanish Colonial Carved Wood Figure"
+   "slug": "santo-virgin-in-prayer-spanish-colonial-carving"
   },
   {
    "id": "317635101878",
@@ -263,6 +265,10 @@
    "price": 815,
    "offer": true,
    "featured": false,
+   "order": 7,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/317635101878",
+   "image": "img/317635101878.jpg",
    "photos": [
     "https://i.ebayimg.com/images/g/Y6cAAeSwP2VpNapf/s-l1600.jpg",
     "https://i.ebayimg.com/images/g/PykAAeSwlyJpNapf/s-l1600.jpg",
@@ -277,11 +283,7 @@
     "The antique alabaster sculpture signed Jean-Baptiste Greuze is a beautifully crafted piece. This handmade sculpture is 12.5 inches tall and a 9.5 inches wide. Made from alabaster, this delicate and intricate piece showcases the mastery of the craft of sculpting. With its lifelike details and beautiful craftsmanship, this sculpture is a true masterpiece that would make a valuable addition to any art collection.",
     "Some damage as shown in pictures."
    ],
-   "ebayUrl": "https://www.ebay.com/itm/317635101878",
-   "image": "img/317635101878.jpg",
-   "visible": true,
-   "slug": "alabaster-bust-young-woman-bonnet-signed-greuze",
-   "seoTitle": "Alabaster Bust of a Young Woman in a Bonnet, Signed Greuze"
+   "slug": "alabaster-bust-young-woman-bonnet-signed-greuze"
   },
   {
    "id": "317698249254",
@@ -294,6 +296,10 @@
    "price": 750,
    "offer": true,
    "featured": false,
+   "order": 8,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/317698249254",
+   "image": "img/317698249254.jpg",
    "photos": [
     "https://i.ebayimg.com/images/g/cHoAAeSwbVVpTdMa/s-l1600.jpg",
     "https://i.ebayimg.com/images/g/juIAAeSwa~RpTc~v/s-l1600.jpg",
@@ -321,11 +327,7 @@
     "This is a beautiful example of Shin-hanga era artistry, perfect for collectors of Japanese nature prints or admirers of Koson's masterful bird studies.",
     "• Shipping: Will be shipped flat and securely between heavy-duty acid-free boards to ensure safe arrival."
    ],
-   "ebayUrl": "https://www.ebay.com/itm/317698249254",
-   "image": "img/317698249254.jpg",
-   "visible": true,
-   "slug": "ohara-koson-two-geese-woodblock-print",
-   "seoTitle": "Two Geese by Ohara Koson, Japanese Woodblock Print"
+   "slug": "ohara-koson-two-geese-woodblock-print"
   },
   {
    "id": "860015009842",
@@ -338,6 +340,10 @@
    "price": 550,
    "offer": true,
    "featured": false,
+   "order": 9,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/860015009842",
+   "image": "img/860015009842.jpg",
    "photos": [
     "https://i.ebayimg.com/images/g/x8AAAeSw6fBqwWTV/s-l1600.jpg",
     "https://i.ebayimg.com/images/g/gIUAAeSwExFqwWUO/s-l1600.jpg",
@@ -362,11 +368,7 @@
     "Please review all photographs carefully for condition. The frame shows visible wear, and the print has not been examined outside its framing; the mat conceals the paper margins. Additional photographs are available upon request.",
     "You will receive the exact framed piece pictured."
    ],
-   "ebayUrl": "https://www.ebay.com/itm/860015009842",
-   "image": "img/860015009842.jpg",
-   "visible": true,
-   "slug": "edward-steichen-lenbach-photogravure-camera-work",
-   "seoTitle": "Lenbach by Edward Steichen, Photogravure from Camera Work"
+   "slug": "edward-steichen-lenbach-photogravure-camera-work"
   },
   {
    "id": "317677509627",
@@ -379,6 +381,10 @@
    "price": 580,
    "offer": false,
    "featured": false,
+   "order": 10,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/317677509627",
+   "image": "img/317677509627.jpg",
    "photos": [
     "https://i.ebayimg.com/images/g/uIcAAeSwp0RpRgWy/s-l1600.jpg",
     "https://i.ebayimg.com/images/g/iKQAAeSwzm5pRgQm/s-l1600.jpg",
@@ -401,11 +407,7 @@
     "As a collector's item in the Breweriana theme, this piece showcases the iconic Budweiser brand and would make a unique addition to any vintage beer memorabilia collection.",
     "Overall dimensions: 42½” x 29½”"
    ],
-   "ebayUrl": "https://www.ebay.com/itm/317677509627",
-   "image": "img/317677509627.jpg",
-   "visible": true,
-   "slug": "attack-on-the-overland-stage-budweiser-print",
-   "seoTitle": "Attack on the Overland Stage, Antique Budweiser Print in Original Frame"
+   "slug": "attack-on-the-overland-stage-budweiser-print"
   },
   {
    "id": "317698991180",
@@ -418,6 +420,10 @@
    "price": 280,
    "offer": true,
    "featured": false,
+   "order": 11,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/317698991180",
+   "image": "img/317698991180.jpg",
    "photos": [
     "https://i.ebayimg.com/images/g/5aIAAeSwvjpq33PZ/s-l1600.jpg",
     "https://i.ebayimg.com/images/g/1zwAAeSwpAVpThLe/s-l1600.jpg",
@@ -442,11 +448,7 @@
     "Shipping & Handling:",
     "Due to the significant size and delicate nature of this antique, it will be professionally packed and insured. Also available for local pickup in the Lynchburg, VA area."
    ],
-   "ebayUrl": "https://www.ebay.com/itm/317698991180",
-   "image": "img/317698991180.jpg",
-   "visible": true,
-   "slug": "antique-gilded-frame-ben-j-cueny-detroit",
-   "seoTitle": "Antique Gilded Picture Frame by Ben J. Cueny, Detroit"
+   "slug": "antique-gilded-frame-ben-j-cueny-detroit"
   },
   {
    "id": "317757670488",
@@ -459,6 +461,10 @@
    "price": 260,
    "offer": true,
    "featured": false,
+   "order": 12,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/317757670488",
+   "image": "img/317757670488.jpg",
    "photos": [
     "https://i.ebayimg.com/images/g/jy8AAeSwhSppNza0/s-l1600.jpg",
     "https://i.ebayimg.com/images/g/yvgAAeSwNaJpZaXa/s-l1600.jpg",
@@ -480,11 +486,7 @@
     "Age appropriate wear, with a couple of small holes outside of the colored picture area and creased corners.",
     "***no frame or glass included for safety of print."
    ],
-   "ebayUrl": "https://www.ebay.com/itm/317757670488",
-   "image": "img/317757670488.jpg",
-   "visible": true,
-   "slug": "windsor-castle-eton-aquatint-ackermann",
-   "seoTitle": "Windsor Castle from Eton, Hand-Colored Aquatint after John Gendall"
+   "slug": "windsor-castle-eton-aquatint-ackermann"
   },
   {
    "id": "317757738403",
@@ -497,6 +499,10 @@
    "price": 175,
    "offer": true,
    "featured": false,
+   "order": 13,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/317757738403",
+   "image": "img/317757738403.jpg",
    "photos": [
     "https://i.ebayimg.com/images/g/3FEAAeSwyF1pQiU-/s-l1600.jpg",
     "https://i.ebayimg.com/images/g/-xIAAeSw45JpZahx/s-l1600.jpg",
@@ -511,11 +517,7 @@
     "Measurements listed are without frame, as this will not include frame. If frame is desired, we can discuss this. But frame is in quite poor condition.",
     "The product is an original hand-tinted engraving of Sir Joshua Reynold’s “Lady Smyth And Children\" by Sydney E. Wilson, framed and signed by the artist. This print features a portrait of a woman with a realistic style, produced in London during the late 19th century. The engraving is of medium size, measuring 15.5 inches in width and 18.75 inches in height, and is presented in a multi-color palette. This piece of art is a valuable addition to any art collection."
    ],
-   "ebayUrl": "https://www.ebay.com/itm/317757738403",
-   "image": "img/317757738403.jpg",
-   "visible": true,
-   "slug": "lady-smyth-and-children-engraving-after-reynolds",
-   "seoTitle": "Lady Smyth and Children, Hand-Colored Engraving after Sir Joshua Reynolds"
+   "slug": "lady-smyth-and-children-engraving-after-reynolds"
   },
   {
    "id": "860081067189",
@@ -528,20 +530,131 @@
    "price": 125,
    "offer": true,
    "featured": false,
+   "order": 14,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/860081067189",
+   "image": "img/860081067189.jpg",
    "photos": [
     "https://i.ebayimg.com/images/g/S6wAAeSwmaFq3Xmj/s-l1600.jpg"
    ],
    "description": [
     "The original painting measures 14.5 x 24 cm, featuring Kravtsova Inna's unique impressionistic style. This modern poetic landscape artwork, created with oil paints on Fabriano Tela Oil Painting Paper, captures the essence of flowers in an ultra-contemporary setting. The small size and miniature features make it a perfect addition to any art collection, showcasing the artist's signature and handmade craftsmanship from Ukraine. A truly one-of-a-kind piece for art enthusiasts who appreciate the beauty of nature and the artistry of the modern era."
    ],
-   "ebayUrl": "https://www.ebay.com/itm/860081067189",
-   "image": "img/860081067189.jpg",
-   "visible": true,
-   "slug": "where-the-light-lingers-inna-kravtsova-oil",
-   "seoTitle": "Where the Light Lingers by Inna Kravtsova, Original Oil Painting"
+   "slug": "where-the-light-lingers-inna-kravtsova-oil"
   },
   {
-   "id": "860146479291",
+   "id": "860165674726",
+   "title": "Abstract in Gold and Ochre",
+   "maker": "Diane Clement",
+   "date": "About 2005",
+   "medium": "Oil on canvas, signed",
+   "size": "48 × 60 in",
+   "category": "Paintings",
+   "price": 3500,
+   "offer": true,
+   "featured": false,
+   "order": 17,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/860165674726",
+   "image": "img/860165674726.jpg",
+   "photos": [
+    "https://i.ebayimg.com/images/g/enYAAeSwzYlrAfc5/s-l1600.jpg",
+    "https://i.ebayimg.com/images/g/gaoAAeSwCP1rAfc5/s-l1600.jpg",
+    "https://i.ebayimg.com/images/g/j0wAAeSwau9rAfc5/s-l1600.jpg",
+    "https://i.ebayimg.com/images/g/e~IAAeSw9klrAfc5/s-l1600.jpg",
+    "https://i.ebayimg.com/images/g/n6wAAeSwyuNrAfc5/s-l1600.jpg",
+    "https://i.ebayimg.com/images/g/l8sAAeSwv85rAfc5/s-l1600.jpg"
+   ],
+   "description": [
+    "In communication with the Artist, she said this piece is valued between $8,640-$14,400.",
+    "Artist: Diane Clement",
+    "Medium: Original on canvas",
+    "Size: 48” x 60”",
+    "Year: c. 2005",
+    "Condition: Excellent",
+    "Provenance: Private collection",
+    "Includes: Artist documentation via official website reference and personal communication with artist.",
+    "Some of Diane’s pieces are owned by the Virginia Museum of Fine art and the Lewis Ginter Botanical Gardens in Richmond and have been featured in countless galleries, see list below.",
+    "Elevate your space with this stunning 4’x5’ original work by acclaimed abstract artist Diane Clement. Known for her dynamic layering and expressive \"drip and flow\" technique, this piece showcases a brilliant sun-drenched palette of golden yellows, ochre, and crisp white, punctuated by intricate, energetic line work in deep earth tones.",
+    "Clement’s work is highly sought after for its ability to command a room while maintaining a sense of airy sophistication. This particular canvas captures a radiant, optimistic energy that shifts beautifully under different lighting conditions. A perfect center-point for a modern living room, corporate office, or private gallery.",
+    "• Artist: Diane Clement",
+    "• Medium: painting on Canvas",
+    "• Style: Contemporary Abstract / Expressionism",
+    "• Condition: Excellent",
+    "EXHIBITIONS",
+    "Solo & Featured Artist Exhibitions:",
+    "2024 Hamptons Fine Art Fair https://hamptonsfineartfair.com/gallery/aprique-gallery/",
+    "COVID",
+    "2021 Relocated to Tucson AZ",
+    "2020 Canceled by Covid 19 Pandemic",
+    "2019 Crossroads Art Center & Black Iris Gallery, Richmond, VA",
+    "2018 Anne's Visual Art Studio, & Black Iris Gallery Richmond, VA",
+    "2017 Artemis Gallery & Anne's Visual Art Studio, Richmond, VA",
+    "2016 Cultural Art Center at Glen Allen, VA",
+    "2015 & 2016 Artemis Gallery & Anne’s Visual Art Studio",
+    "2015 The Ward Center for Contemporary Art & Walton Gallery",
+    "2014 Rocketts Studios & Galleries",
+    "2013 Represented by Gallery Flux & artspace - group exhibitions",
+    "2012 Art Sante Fe (Aprique Gallery) & art Expo New York;",
+    "2011 Visual Art Studio, Richmond, VA",
+    "2009 & 2010 Private Exhibitions & Sales",
+    "2008 March - Crossroads Art Center, Richmond, VA",
+    "2007 Feb.,June, Sept. - Art Works Studios & Galleries, Richmond, VA",
+    "2007 March - Crossroads Art Center, Richmond, VA",
+    "2006 & 2007 Jan. - 12 12 Gallery, Richmond,",
+    "2005 Five Exhibitions:",
+    "Beatnik Gallery, Petersburg, VA",
+    "Corporate Museum & Frame, Richmond, VA -",
+    "March, May - Artemis Gallery, Richmond, VA",
+    "Petersburg Regional Art Center, Petersburg,",
+    "2004 Beatnik Gallery, Petersburg, VA"
+   ],
+   "slug": "abstract-in-gold-and-ochre-diane-clement"
+  },
+  {
+   "id": "860170304379",
+   "title": "Sol y Metal I",
+   "maker": "Ricardo Córdova Farfán (Peruvian)",
+   "date": "1994",
+   "medium": "Watercolor, signed lower right; matted and framed, with original 1994 exhibition form",
+   "size": "About 59 × 74 cm framed",
+   "category": "Works on paper",
+   "price": 1485,
+   "offer": true,
+   "featured": false,
+   "order": 18,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/860170304379",
+   "image": "img/860170304379.jpg",
+   "photos": [
+    "https://i.ebayimg.com/images/g/~9sAAeSwsjdrAgIo/s-l1600.jpg",
+    "https://i.ebayimg.com/images/g/n6oAAeSweM5rAgEt/s-l1600.jpg",
+    "https://i.ebayimg.com/images/g/E4oAAeSwRndrAgEt/s-l1600.jpg",
+    "https://i.ebayimg.com/images/g/GBAAAeSwOWNrAgJV/s-l1600.jpg",
+    "https://i.ebayimg.com/images/g/BXQAAeSw4U1rAgEt/s-l1600.jpg",
+    "https://i.ebayimg.com/images/g/olIAAeSwig9rAgEt/s-l1600.jpg",
+    "https://i.ebayimg.com/images/g/jN0AAeSw-blrAgEt/s-l1600.jpg"
+   ],
+   "description": [
+    "Original watercolor by Ricardo Córdova Farfán, titled “Sol y Metal I,” dated 1994 and signed by the artist.",
+    "This beautiful original work depicts an antique balance scale and metal oil lantern rendered in warm, earthy tones. The restrained palette and dramatic natural shadows give the still life a wonderfully atmospheric, almost nostalgic quality.",
+    "The painting is accompanied by an original 1994 artist registration/exhibition form from the United States Government Women’s Association’s Noche de Arte event in Lima, Peru. The document identifies the artist as Ricardo Córdova F., the work as “Sol y Metal I,” and the medium as Acuarela (watercolor). It records the dimensions as approximately 59 × 74 cm including the frame, with a handwritten date of 09/04/94 and artist signature.",
+    "Artist: Ricardo Córdova Farfán",
+    "Title: Sol y Metal I",
+    "Year: 1994",
+    "Medium: Original watercolor",
+    "Signature: Signed lower right",
+    "Image size: Approximately 59 × 74 cm including frame",
+    "Framed: Yes",
+    "Provenance: Accompanied by original 1994 registration documentation",
+    "The artwork is presented in its original period frame with mat and glazing. Please examine all photographs carefully for the condition of both the artwork and frame.",
+    "A particularly appealing opportunity for collectors of Peruvian art, Latin American watercolor, South American modernism, and original works on paper.",
+    "Please note: This is an original watercolor, not a print or reproduction. The accompanying 1994 documentation is included with the artwork and will be carefully preserved for the new owner."
+   ],
+   "slug": "sol-y-metal-i-ricardo-cordova-farfan"
+  },
+  {
+   "id": "860168087601",
    "title": "Fujieda and Kanaya, from the Kyōka Tōkaidō",
    "maker": "Utagawa Hiroshige, design",
    "date": "",
@@ -551,6 +664,10 @@
    "price": 48,
    "offer": false,
    "featured": false,
+   "order": 19,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/860168087601",
+   "image": "img/860168087601.jpg",
    "photos": [
     "https://i.ebayimg.com/images/g/q8AAAeSw1MJqwXCO/s-l1600.jpg",
     "https://i.ebayimg.com/images/g/QW4AAeSwG1ZqwXCO/s-l1600.jpg",
@@ -568,14 +685,10 @@
     "Condition: Visible creasing, wrinkles, paper toning, and edge and corner wear. Please review the original front and reverse photographs closely for the condition of each sheet.",
     "Sold together as a lot of two. Will be carefully packed flat with rigid protection for shipping."
    ],
-   "ebayUrl": "https://www.ebay.com/itm/860146479291",
-   "image": "img/860146479291.jpg",
-   "visible": true,
-   "slug": "hiroshige-fujieda-kanaya-woodblock-prints",
-   "seoTitle": "Fujieda and Kanaya by Hiroshige, Pair of Japanese Woodblock Prints"
+   "slug": "hiroshige-fujieda-kanaya-woodblock-prints"
   },
   {
-   "id": "860149331179",
+   "id": "860170585472",
    "title": "Four Japanese Shikishi Boards",
    "maker": "Japanese, artist unverified",
    "date": "",
@@ -585,6 +698,10 @@
    "price": 25,
    "offer": false,
    "featured": false,
+   "order": 20,
+   "visible": true,
+   "ebayUrl": "https://www.ebay.com/itm/860170585472",
+   "image": "img/860170585472.jpg",
    "photos": [
     "https://i.ebayimg.com/images/g/E9IAAeSw7Z5qwYaP/s-l1600.jpg",
     "https://i.ebayimg.com/images/g/2Y0AAeSwCCpqwWtW/s-l1600.jpg",
@@ -605,11 +722,7 @@
     "Artist, age, and exact production methods have not been verified. Offered as pictured, without frames.",
     "A distinctive grouping for a Japanese art collection, gallery wall, or decorative display."
    ],
-   "ebayUrl": "https://www.ebay.com/itm/860149331179",
-   "image": "img/860149331179.jpg",
-   "visible": true,
-   "slug": "four-japanese-shikishi-boards-calligraphy",
-   "seoTitle": "Four Japanese Shikishi Boards, Calligraphy and Kimono Pictures"
+   "slug": "four-japanese-shikishi-boards-calligraphy"
   }
  ]
 }
